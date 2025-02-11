@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./components/footer";
 
-/* eslint-disable react/no-unescaped-entities */
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
@@ -28,8 +26,7 @@ export default function Home() {
           </Link>
         </nav>
       </main>
-
-      {/* Footer Stays Centered */}
+      {/* Footer */}
       <footer className="w-full mt-auto">
         <Footer />
       </footer>
