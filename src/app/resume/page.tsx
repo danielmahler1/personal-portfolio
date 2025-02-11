@@ -1,4 +1,5 @@
 import Footer from "../components/footer";
+import Image from "next/image";
 
 export default function ResumePage() {
   return (
@@ -9,7 +10,7 @@ export default function ResumePage() {
 
         {/* Resume SVG */}
         <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-lg">
-          <img src="/resume.svg" alt="Resume" className="w-full" />
+        <Image src="/resume.svg" alt="Resume" width={800} height={1000} className="w-full" />
         </div>
       </main>
 
