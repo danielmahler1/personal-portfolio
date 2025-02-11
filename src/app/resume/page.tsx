@@ -1,12 +1,22 @@
+import Footer from "../components/footer";
+
 export default function ResumePage() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center p-10 bg-black text-white">
-      <h1 className="text-4xl font-bold mb-6">Resume</h1>
+    <div className="flex flex-col min-h-screen bg-black text-white">
+      {/* Main Content - Centered for Resume Page */}
+      <main className="flex-grow flex flex-col items-center p-10">
+        <h1 className="text-4xl font-mono mb-6">Resume</h1>
 
-      {/* Apply background directly via Tailwind */}
-      <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-lg">
-        <img src="/resume.svg" alt="Resume" className="w-full" />
-      </div>
-    </main>
+        {/* Resume SVG */}
+        <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-lg">
+          <img src="/resume.svg" alt="Resume" className="w-full" />
+        </div>
+      </main>
+
+      {/* Footer Stays Centered */}
+      <footer className="w-full mt-auto">
+        <Footer />
+      </footer>
+    </div>
   );
 }
