@@ -3,22 +3,16 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-4 flex justify-center">
-      <div className="flex items-center gap-6 max-w-screen-lg mx-auto">
+    <footer className="w-full bg-black text-white py-6 flex justify-center">
+      <div className="flex flex-wrap items-center justify-center gap-6 max-w-screen-lg mx-auto px-6">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.linkedin.com/in/daniel-mahler/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/linkedin.svg"
-            alt="LinkedIn logo"
-            width={24}
-            height={24}
-          />
-          LinkedIn
+          <Image src="/linkedin.svg" alt="LinkedIn logo" width={24} height={24} />
+          <span>LinkedIn</span>
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -26,14 +20,8 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/github.svg"
-            alt="GitHub logo"
-            width={24}
-            height={24}
-          />
-          GitHub
+          <Image src="/github.svg" alt="GitHub logo" width={24} height={24} />
+          <span>GitHub</span>
         </a>
       </div>
     </footer>

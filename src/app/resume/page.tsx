@@ -10,14 +10,14 @@ export default function ResumePage() {
 
         {/* Resume SVG */}
         <div className="w-full max-w-4xl bg-white p-4 rounded-lg shadow-lg">
-        <Image src="/resume.svg" alt="Resume" width={800} height={1000} className="w-full" />
+          <Image src="/resume.svg" alt="Resume" width={800} height={1000} className="w-full" />
         </div>
       </main>
 
-      {/* Footer Stays Centered */}
-      <footer className="w-full mt-auto">
+      {/* Footer - Ensure It Stays Consistent */}
+      <div className="w-full">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }

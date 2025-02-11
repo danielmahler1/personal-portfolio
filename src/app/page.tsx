@@ -25,10 +25,11 @@ export default function Home() {
           </Link>
         </nav>
       </main>
-      {/* Footer */}
-      <footer className="w-full mt-auto">
+
+      {/* Footer - Wrap in a div to prevent layout issues */}
+      <div className="w-full">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }
