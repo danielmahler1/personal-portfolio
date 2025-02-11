@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./components/footer";
 
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
