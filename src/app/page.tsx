@@ -4,30 +4,32 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
-      {/* Main Content - Left-Aligned */}
-      <main className="flex-grow flex flex-col items-start p-8 sm:p-20">
-        <h1 className="text-5xl sm:text-7xl font-mono">Daniel Mahler</h1>
-        <p className="text-lg sm:text-2xl text-gray-300 font-mono">Software Engineer</p>
+      {/* Main Content - Ensure It Pushes Footer to Bottom */}
+      <main className="flex-grow flex flex-col justify-between items-start p-8 sm:p-20">
+        <div>
+          <h1 className="text-5xl sm:text-7xl font-mono">Daniel Mahler</h1>
+          <p className="text-lg sm:text-2xl text-gray-300 font-mono">Software Engineer</p>
 
-        {/* Navigation Links */}
-        <nav className="mt-20 space-y-4">
-          <Link href="/resume" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
-            Resume
-          </Link>
-          <Link href="/projects" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
-            Projects
-          </Link>
-          <Link href="/coursework" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
-            Course Work
-          </Link>
-          <Link href="/contact" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
-            Contact
-          </Link>
-        </nav>
+          {/* Navigation Links */}
+          <nav className="mt-20 space-y-4">
+            <Link href="/resume" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
+              Resume
+            </Link>
+            <Link href="/projects" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
+              Projects
+            </Link>
+            <Link href="/coursework" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
+              Course Work
+            </Link>
+            <Link href="/contact" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
+              Contact
+            </Link>
+          </nav>
+        </div>
       </main>
 
-      {/* Footer - Wrap in a div to prevent layout issues */}
-      <div className="w-full">
+      {/* Footer */}
+      <div className="mt-auto w-full">
         <Footer />
       </div>
     </div>
