@@ -4,13 +4,13 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
-      {/* Main Content - Ensures Text is in the Top-Left */}
-      <main className="flex-grow p-8 sm:p-20">
+      {/* Main Content - Adjusted for Better Spacing */}
+      <main className="flex-grow px-8 sm:px-16 pt-10 sm:pt-20">
         <h1 className="text-5xl sm:text-7xl font-mono">Daniel Mahler</h1>
         <p className="text-lg sm:text-2xl text-gray-300 font-mono">Software Engineer</p>
 
-        {/* Navigation Links */}
-        <nav className="mt-10 sm:mt-20 space-y-2 sm:space-y-4">
+        {/* Navigation Links - Slightly Increased Spacing */}
+        <nav className="mt-8 sm:mt-14 space-y-3 sm:space-y-5">
           <Link href="/resume" className="block text-lg sm:text-xl text-gray-300 font-mono hover:text-white">
             Resume
           </Link>
@@ -26,7 +26,7 @@ export default function Home() {
         </nav>
       </main>
 
-      {/* Footer at Bottom Without Pushing Content Down */}
+      {/* Footer dynamically placed */}
       <Footer />
     </div>
   );
