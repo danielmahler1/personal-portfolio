@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Variables for Light/Dark Mode */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,15 +15,21 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom class for '100dvh' to address iOS Safari's dynamic address bar */
+.h-dvh {
+  height: 100dvh; /* Full dynamic viewport height */
 }
 
+/* Optional: remove iOS Safari overscroll/bounce globally */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scroll */
+  /* overscroll-behavior: none; Helps remove rubber-band bounce on iOS */
+}
+
+/* Use the CSS variables for background and foreground. */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
